@@ -10,7 +10,7 @@ describe("favorites", () => {
   const user = provider.wallet;
   const program = anchor.workspace.Favorites as Program<Favorites>;
 
-  const expectedNumber = 8;
+  const expectedNumber = new anchor.BN(8);
   const expectedColor = "green";
   const expectedHobbies = ["coding", "Adventuring"];
 
@@ -27,7 +27,7 @@ describe("favorites", () => {
 
     const favoritesAccount = await program.account.favorites.fetch(favoritesPda);
 
-    expect(favoritesAccount.number).to.equal(expectedNumber);
+    expect(favoritesAccount.number).to.equal(expectedNumber.toNumber);
     expect(favoritesAccount.color).to.equal(expectedColor);
     expect(favoritesAccount.hobbies).to.deep.equal(expectedHobbies);
   });
