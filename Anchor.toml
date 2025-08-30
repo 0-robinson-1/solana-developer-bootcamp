@@ -5,7 +5,7 @@ package_manager = "yarn"
 resolution = true
 skip-lint = false
 
-[programs.localnet]
+[programs.devnet]
 favorites = "AEvRM2qnZZoQa7zVg1wbWjkyH4Ls4vxp4TRM31QKT8W9"
 
 [registry]
