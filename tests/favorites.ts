@@ -27,7 +27,7 @@ describe("favorites", () => {
 
     const favoritesAccount = await program.account.favorites.fetch(favoritesPda);
 
-    expect(favoritesAccount.number).to.equal(expectedNumber.toNumber());
+    expect(favoritesAccount.number.toNumber()).to.equal(expectedNumber.toNumber());
     expect(favoritesAccount.color).to.equal(expectedColor);
     expect(favoritesAccount.hobbies).to.deep.equal(expectedHobbies);
   });
