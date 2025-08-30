@@ -17,7 +17,8 @@ pub mod favorites {
         msg!("Greetings from {}", context.program_id);
         let user_public_key = context.accounts.user.key();
 
-        msg!("User {user_public_key}'s favorite number is {number}, favorite color is {color}, and their hobbies are {hobbies:?}");
+        msg!("User {}'s favorite number is {}, favorite color is {}, and their hobbies are {:?}",
+            user_public_key, number, color, hobbies);
 
         context.accounts.favorites.set_inner( Favorites {
             number,
