@@ -1,0 +1,1 @@
+/Users/robinpannemans/RustProjects/solana-developer-bootcamp/voting-dapp/anchor/target/sbpf-solana-solana/release/libvotingdapp.rlib: /Users/robinpannemans/RustProjects/solana-developer-bootcamp/voting-dapp/anchor/programs/votingdapp/src/lib.rs
