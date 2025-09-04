@@ -40,8 +40,11 @@ describe('votingdapp', () => {
     );
 
     await votingProgram.methods.initializePoll(
+      new anchor.BN(1),
+      "What is your favorite type of peanut butter?",
+      new anchor.BN(0),
+      new anchor.BN(1856989183),
+    ).rpc();
 
-    );
-    
   });
 });
